@@ -29,6 +29,7 @@ const routes: Routes = [
     FormsModule
   ],
   providers: [
+    {provide: HTTP_INTERCEPTORS, multi: true, useClass: XhrInterceptor}
   ],
   bootstrap: [AppComponent]
 })

@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     
     // Sends a request to /resource mapping in the server 
     // Will never be exected as it doesnt have any header containing user credentials
-    http.get("http://localhost:8080/resource").subscribe((data) => (this.greeting = data));
+    http.get("http://localhost:8080/resource", { headers: app.headers }).subscribe((data) => (this.greeting = data));
   }
 
   // Called from HTML page 
