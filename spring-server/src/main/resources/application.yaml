@@ -1,0 +1,6 @@
+spring:
+  security:
+    user:
+      # Default username and password for spring security
+      name: gagan
+      password: 123456
